@@ -1,0 +1,88 @@
+.accessible-theme {
+    font-size: 18px;
+}
+
+.accessible-theme body,
+.accessible-theme #root {
+    background: #ffffff;
+    color: #111111;
+}
+
+.accessible-theme * {
+    letter-spacing: 0.02em;
+    word-spacing: 0.12em;
+}
+
+.accessible-theme h1,
+.accessible-theme h2,
+.accessible-theme h3,
+.accessible-theme h4,
+.accessible-theme h5,
+.accessible-theme h6 {
+    color: #111111 !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.6em;
+}
+
+.accessible-theme p,
+.accessible-theme span,
+.accessible-theme label,
+.accessible-theme li,
+.accessible-theme div,
+.accessible-theme button,
+.accessible-theme input,
+.accessible-theme textarea {
+    line-height: 1.8;
+}
+
+.accessible-theme p,
+.accessible-theme li {
+    margin-bottom: 0.8em;
+}
+
+.accessible-theme button,
+.accessible-theme a,
+.accessible-theme input,
+.accessible-theme textarea,
+.accessible-theme select {
+    font-size: 18px;
+}
+
+.accessible-theme button:focus-visible,
+.accessible-theme a:focus-visible,
+.accessible-theme input:focus-visible,
+.accessible-theme textarea:focus-visible,
+.accessible-theme select:focus-visible {
+    outline: 3px solid #ffbf00 !important;
+    outline-offset: 3px !important;
+}
+
+.accessible-theme .page-title {
+    font-size: 30px !important;
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.accessible-theme .step-page,
+.accessible-theme .main-box,
+.accessible-theme .privacy-card,
+.accessible-theme .compact-card {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-color: #000000 !important;
+}
+
+.accessible-theme .compact-card,
+.accessible-theme .privacy-card,
+.accessible-theme .main-box {
+    border-width: 2px !important;
+}
+
+.accessible-theme .MuiTypography-root {
+    color: #111111;
+}
+
+.accessible-theme .MuiButton-root {
+    min-height: 44px;
+}

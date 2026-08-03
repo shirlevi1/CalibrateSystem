@@ -1,0 +1,137 @@
+.floating-contact-button {
+    position: fixed;
+    bottom: calc(70px + 20px + env(safe-area-inset-bottom, 0px));
+    left: max(24px, env(safe-area-inset-left, 0px));
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    z-index: 1200;
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            opacity 0.2s ease,
+            background-color 0.2s ease;
+}
+
+.floating-contact-button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+    background: #1d4ed8;
+}
+
+.floating-contact-button:active {
+    transform: scale(0.97);
+}
+
+.floating-contact-button:focus-visible {
+    outline: 3px solid #ffbf00;
+    outline-offset: 4px;
+}
+
+.floating-contact-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.floating-contact-button svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 2;
+}
+
+.accessible-theme .floating-contact-button {
+    bottom: calc(82px + 20px + env(safe-area-inset-bottom, 0px));
+    width: 68px;
+    height: 68px;
+}
+
+.accessible-theme .floating-contact-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.accessible-theme .floating-contact-button:focus-visible {
+    outline: 4px solid #ffbf00;
+    outline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+    .floating-contact-button {
+        width: 58px;
+        height: 58px;
+        bottom: calc(70px + 16px + env(safe-area-inset-bottom, 0px));
+        left: max(18px, env(safe-area-inset-left, 0px));
+    }
+
+    .floating-contact-button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .accessible-theme .floating-contact-button {
+        width: 62px;
+        height: 62px;
+        bottom: calc(82px + 16px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .accessible-theme .floating-contact-button svg {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media (max-width: 420px) {
+    .floating-contact-button {
+        width: 54px;
+        height: 54px;
+        bottom: calc(70px + 14px + env(safe-area-inset-bottom, 0px));
+        left: max(14px, env(safe-area-inset-left, 0px));
+    }
+
+    .floating-contact-button svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .accessible-theme .floating-contact-button {
+        width: 58px;
+        height: 58px;
+        bottom: calc(82px + 14px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .accessible-theme .floating-contact-button svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-height: 600px) {
+    .floating-contact-button {
+        width: 52px;
+        height: 52px;
+        bottom: calc(70px + 10px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .floating-contact-button svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .accessible-theme .floating-contact-button {
+        width: 56px;
+        height: 56px;
+        bottom: calc(82px + 10px + env(safe-area-inset-bottom, 0px));
+    }
+}

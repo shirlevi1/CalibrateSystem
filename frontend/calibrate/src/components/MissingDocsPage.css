@@ -1,0 +1,469 @@
+.missing-docs-page {
+    min-height: calc(100vh - 80px);
+    padding: 20px 24px 90px;
+    background: #F4F6F8;
+    color: #2C3338;
+    font-family: "Discovery", system-ui, sans-serif;
+    box-sizing: border-box;
+}
+
+.missing-docs-shell {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.missing-docs-header {
+    margin-bottom: 16px;
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.missing-docs-label {
+    color: #607080;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.missing-docs-header h1 {
+    margin: 4px 0 5px;
+    color: #2C3338;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.missing-docs-header p {
+    margin: 0;
+    color: #607080;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.download-all-docs-btn {
+    margin-top: 12px;
+    min-height: 36px;
+    padding: 0 14px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border: none;
+    border-radius: 6px;
+    background: #4A6076;
+    color: #FFFFFF;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+            background-color 0.2s ease,
+            opacity 0.2s ease;
+}
+
+.download-all-docs-btn:hover {
+    background: #36495D;
+}
+
+.download-all-docs-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.missing-docs-count {
+    min-width: 82px;
+    padding: 8px 12px;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 999px;
+    background: #F4F6F8;
+
+    color: #4A6076;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.missing-docs-error {
+    margin-bottom: 14px;
+    padding: 12px;
+
+    background: #FFF5F6;
+    border: 1px solid #F3B8C0;
+    border-radius: 6px;
+
+    color: #B00020;
+    font-size: 14px;
+}
+
+.missing-docs-loading,
+.missing-docs-empty {
+    padding: 30px 18px;
+
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    color: #607080;
+    text-align: center;
+    font-size: 14px;
+}
+
+.missing-docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.missing-doc-card {
+    padding: 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.missing-doc-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.missing-doc-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F4F6F8;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    color: #4A6076;
+}
+
+.missing-doc-title-area {
+    min-width: 0;
+    flex: 1;
+}
+
+.missing-doc-title-area h2 {
+    margin: 0 0 7px;
+
+    color: #2C3338;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.missing-doc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.missing-doc-meta span {
+    padding: 4px 8px;
+
+    border-radius: 999px;
+    background: #F4F6F8;
+    border: 1px solid #D1D5DB;
+
+    color: #607080;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.missing-files-list {
+    margin-top: 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.missing-file-row {
+    padding: 11px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    border: 1px solid #E6E9ED;
+    border-radius: 6px;
+    background: #FAFBFC;
+}
+
+.missing-file-info {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #4A6076;
+}
+
+.missing-file-info div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.missing-file-info strong {
+    color: #2C3338;
+    font-size: 14px;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.missing-file-info span {
+    color: #607080;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.missing-file-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.file-action-btn {
+    min-height: 32px;
+    padding: 0 11px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            color 0.2s ease,
+            opacity 0.2s ease;
+}
+
+.view-btn {
+    border: 1px solid #4A6076;
+    background: #FFFFFF;
+    color: #4A6076;
+}
+
+.view-btn:hover {
+    background: #F4F6F8;
+}
+
+.download-btn {
+    border: none;
+    background: #4A6076;
+    color: #FFFFFF;
+}
+
+.download-btn:hover {
+    background: #36495D;
+}
+
+.file-action-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.missing-no-files {
+    margin-top: 14px;
+    padding: 12px;
+
+    border-radius: 6px;
+    background: #F4F6F8;
+    color: #607080;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+/* PDF Viewer */
+
+.pdf-viewer-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(44, 51, 56, 0.46);
+}
+
+.pdf-viewer-modal {
+    width: min(980px, 100%);
+    max-height: calc(100vh - 32px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.pdf-viewer-header {
+    position: relative;
+
+    min-height: 58px;
+    padding: 14px 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F4F6F8;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.pdf-viewer-header h3 {
+    margin: 0;
+
+    color: #2C3338;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.pdf-viewer-close {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #607080;
+
+    cursor: pointer;
+}
+
+.pdf-viewer-close:hover {
+    color: #2C3338;
+    border-color: #8CA1B6;
+}
+
+.pdf-viewer-body {
+    padding: 14px;
+    overflow-y: auto;
+    background: #F4F6F8;
+}
+
+.pdf-viewer-page {
+    margin: 0 auto 14px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pdf-viewer-page canvas {
+    max-width: 100%;
+    height: auto !important;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 700px) {
+    .missing-docs-page {
+        padding: 16px 14px 90px;
+    }
+
+    .missing-docs-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .download-all-docs-btn {
+        width: 100%;
+    }
+
+    .missing-docs-count {
+        width: 100%;
+    }
+
+    .missing-doc-card {
+        padding: 14px;
+    }
+
+    .missing-doc-card-header {
+        flex-direction: column;
+    }
+
+    .missing-file-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .missing-file-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .file-action-btn {
+        width: 100%;
+    }
+
+    .pdf-viewer-overlay {
+        padding: 10px;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .pdf-viewer-modal {
+        max-height: none;
+    }
+
+    .pdf-viewer-body {
+        overflow-y: visible;
+    }
+
+    .pdf-viewer-header {
+        padding: 14px 46px;
+    }
+
+    .pdf-viewer-close {
+        left: 12px;
+    }
+}

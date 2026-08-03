@@ -1,0 +1,275 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: "Discovery", system-ui, sans-serif;
+    background: #F4F6F8;
+    color: #2C3338;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+    background-image: url("../assets/img_1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(244, 246, 248, 0.58);
+    backdrop-filter: blur(2px);
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+    position: relative;
+    z-index: 1;
+    width: 550px;
+    max-width: 100%;
+    padding: 40px 36px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(44, 51, 56, 0.08);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ================= LOGO ================= */
+
+.login-logo {
+    width: 88px;
+    margin-bottom: 14px;
+    object-fit: contain;
+}
+
+/* ================= TITLE ================= */
+
+.login-title {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2C3338;
+    line-height: 1.4;
+}
+
+/* ================= INPUTS ================= */
+
+.login-box input {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #2C3338;
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    box-sizing: border-box;
+    direction: ltr;
+    text-align: left;
+    transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease,
+            background 0.2s ease;
+}
+
+.login-box input::placeholder {
+    color: #8CA1B6;
+    direction: ltr;
+    text-align: left;
+}
+
+.login-box input:focus {
+    border-color: #4A6076;
+    box-shadow: 0 0 0 3px rgba(74, 96, 118, 0.12);
+    background: #FFFFFF;
+}
+
+/* ================= PASSWORD FIELD ================= */
+
+.login-password-field {
+    position: relative;
+    width: 100%;
+}
+
+.login-password-field input {
+    padding-right: 42px;
+    padding-left: 14px;
+}
+
+.login-box form button.login-password-eye {
+    position: absolute;
+    right: 12px;
+    left: auto;
+    top: calc(50% - 7px);
+    transform: translateY(-50%);
+
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #607080;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    box-shadow: none;
+    line-height: 1;
+
+    transition:
+            color 0.2s ease,
+            background 0.2s ease;
+}
+
+.login-box form button.login-password-eye:hover {
+    background: transparent;
+    color: #4A6076;
+    transform: translateY(-50%);
+}
+
+.login-box form button.login-password-eye:active {
+    transform: translateY(-50%);
+}
+
+.login-box form button.login-password-eye:focus {
+    outline: none;
+}
+
+.login-box form button.login-password-eye svg {
+    display: block;
+    width: 17px;
+    height: 17px;
+}
+
+/* ================= BUTTON ================= */
+
+.login-submit-button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    background: #4A6076;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition:
+            background 0.2s ease,
+            transform 0.15s ease;
+}
+
+.login-submit-button:hover {
+    background: #36495D;
+    transform: translateY(-1px);
+}
+
+.login-submit-button:active {
+    transform: scale(0.995);
+}
+
+.login-submit-button:disabled {
+    background: #8CA1B6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ================= FORGOT PASSWORD ================= */
+
+.login-box form button.forgot-password-link {
+    width: auto;
+    min-width: 0;
+    min-height: auto;
+
+    display: block;
+    align-self: flex-start;
+
+    padding: 0;
+    margin: 0 0 12px;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #4A6076;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: none;
+
+    transition:
+            color 0.2s ease,
+            background 0.2s ease;
+}
+
+.login-box form button.forgot-password-link:hover {
+    background: transparent;
+    color: #36495D;
+    transform: none;
+}
+
+.login-box form button.forgot-password-link:active {
+    transform: none;
+}
+
+/* ================= ERROR ================= */
+
+.error-message {
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #B00020;
+    line-height: 1.5;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+    .login-container {
+        padding: 18px;
+    }
+
+    .login-box {
+        padding: 30px 22px;
+    }
+
+    .login-title {
+        font-size: 21px;
+    }
+
+    .login-logo {
+        width: 74px;
+    }
+}

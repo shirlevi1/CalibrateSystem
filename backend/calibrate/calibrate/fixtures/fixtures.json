@@ -1,0 +1,242 @@
+[
+  {
+    "model": "calibrate.ChatbotQuestion",
+    "pk": 1,
+    "fields": {
+      "question": "איפה רואים מסמכים חסרים?",
+      "answer": "את המסמכים החסרים ניתן לראות דרך מסמכי הפרויקט ולסנן לפי חסרים. שם יוצגו מסמכים שעדיין דורשים טיפול או השלמה.",
+      "position": 1,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.ChatbotQuestion",
+    "pk": 2,
+    "fields": {
+      "question": "איפה רואים מסמכים נדרשים?",
+      "answer": "את כל המסמכים הנדרשים לפרויקט ניתן לראות במסמכי הפרויקט. המסך מציג את כלל הטפסים והמסמכים הרלוונטיים לפרויקט.",
+      "position": 2,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.ChatbotQuestion",
+    "pk": 3,
+    "fields": {
+      "question": "איך מורידים מסמך?",
+      "answer": "במסך המסמכים, ליד מסמך שיש לו קובץ זמין, מופיע כפתור הורדה או צפייה במסמך. לחיצה עליו תפתח או תוריד את הקובץ.",
+      "position": 3,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.ChatbotQuestion",
+    "pk": 4,
+    "fields": {
+      "question": "איפה רואים את צוות המלווה?",
+      "answer": "את צוות המלווה ניתן לראות דרך הכרטיס צוות מלווה. שם יוצגו אנשי המקצוע או הגורמים המלווים של הפרויקט.",
+      "position": 4,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.ChatbotQuestion",
+    "pk": 5,
+    "fields": {
+      "question": "איך בוחרים פרויקט אחר?",
+      "answer": "ניתן לבחור פרויקט אחר דרך מסך בחירת הפרויקטים או דרך תפריט המערכת, בהתאם להרשאות המשתמש.",
+      "position": 5,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.InformationGuideContent",
+    "pk": 1,
+    "fields": {
+      "step": "content_control",
+      "content_data": {
+        "pageTitle": "מידע ומדריכים - בקרת תכן",
+        "pageDescription": "כל המידע החשוב לשלב התכנון, מרוכז במקום אחד בצורה ברורה ונגישה.",
+        "heroNoteTitle": "מה חשוב להבין בשלב התכנון?",
+        "heroNoteText": "בקרת התכן נועדה לוודא שהתכנון של הפרויקט עומד בדרישות המקצועיות לפני שמתחילים את העבודה בפועל.",
+        "summaryCards": [
+          {
+            "icon": "clipboard",
+            "title": "מטרת השלב",
+            "text": "לבחון את התכנון לפני תחילת העבודה."
+          },
+          {
+            "icon": "shield",
+            "title": "מה בודקים?",
+            "text": "תקנים, דרישות הנדסיות, מסמכים והתאמה להיתר."
+          },
+          {
+            "icon": "info",
+            "title": "למה זה חשוב?",
+            "text": "כדי לצמצם טעויות, עיכובים ותיקונים בשלבים מאוחרים."
+          }
+        ],
+        "guides": [
+          {
+            "title": "מהי בקרת תכן?",
+            "text": "בקרת התכן היא אחד השלבים המרכזיים בתהליך קבלת היתר הבנייה. בשלב זה נבחנים ההיבטים ההנדסיים של הפרויקט לפני תחילת העבודה.",
+            "secondText": "",
+            "highlight": "מכון הבקרה מוודא שהתכנון עומד בתקנים ובדרישות המחייבות."
+          },
+          {
+            "title": "מהם מכוני בקרה?",
+            "text": "מכוני הבקרה הוקמו כדי לשפר את האיכות והבטיחות בענף הבנייה, באמצעות בדיקה מקצועית ובלתי תלויה של התכנון.",
+            "secondText": "",
+            "highlight": "המכון מסייע לזהות פערים בתכנון לפני שהם הופכים לבעיות בשטח."
+          },
+          {
+            "title": "מיהו בקר מומחה?",
+            "text": "בקר מומחה הוא איש מקצוע שבודק תחום הנדסי מסוים בפרויקט, בהתאם לדרישות ולתקנים הרלוונטיים.",
+            "secondText": "",
+            "highlight": "כל תחום נבדק על ידי גורם מקצועי שמוודא עמידה בדרישות."
+          },
+          {
+            "title": "למה צריך בקרה אם יש פיקוח?",
+            "text": "פיקוח מתבצע בזמן הבנייה בשטח, בעוד שבקרה בוחנת את התכנון לפני תחילת העבודה.",
+            "secondText": "",
+            "highlight": "השילוב בין בקרה לפיקוח מפחית טעויות, עיכובים ועלויות מיותרות."
+          }
+        ],
+        "videos": [
+          {
+            "title": "סרטון הדרכה 1",
+            "description": "לחצי לצפייה בסרטון ההדרכה.",
+            "src": "/videos/construction-1.mp4",
+            "thumbnail": "/images/construction-1-thumbnail.jpg"
+          },
+          {
+            "title": "סרטון הדרכה 2",
+            "description": "לחצי לצפייה בסרטון ההדרכה.",
+            "src": "/videos/construction-2.mp4",
+            "thumbnail": "/images/construction-2-thumbnail.jpg"
+          }
+        ]
+      },
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.InformationGuideContent",
+    "pk": 2,
+    "fields": {
+      "step": "execution_control",
+      "content_data": {
+        "pageTitle": "מידע ומדריכים - בקרת ביצוע",
+        "pageDescription": "כל המידע החשוב לשלב הביצוע, מרוכז במקום אחד בצורה ברורה ונגישה.",
+        "heroNoteTitle": "מה חשוב להבין בשלב הביצוע?",
+        "heroNoteText": "בקרת הביצוע נועדה לוודא שהעבודה בשטח מתקדמת לפי התכנון המאושר, תוך שמירה על איכות, בטיחות ועמידה בדרישות.",
+        "summaryCards": [
+          {
+            "icon": "clipboard",
+            "title": "מטרת השלב",
+            "text": "לוודא שהביצוע בשטח תואם לתכנון המאושר."
+          },
+          {
+            "icon": "shield",
+            "title": "מה בודקים?",
+            "text": "איכות ביצוע, התאמה לתכנון, יציבות ועמידה בדרישות."
+          },
+          {
+            "icon": "info",
+            "title": "למה זה חשוב?",
+            "text": "כדי לזהות בעיות בזמן ולמנוע עיכובים בהמשך הפרויקט."
+          }
+        ],
+        "guides": [
+          {
+            "title": "מהי בקרת ביצוע במהלך הבנייה?",
+            "text": "בקרת הביצוע מתחילה לאחר קבלת היתר הבנייה ונמשכת לאורך שלבי העבודה המרכזיים בפרויקט.",
+            "secondText": "מטרתה לוודא שהבנייה מתבצעת בהתאם לתכנון המאושר, לתקנים ולדרישות היציבות והבטיחות.",
+            "highlight": "בשלב זה מתמקדים בנקודות הבקרה הקריטיות ביותר לאורך הביצוע."
+          }
+        ],
+        "videos": [
+          {
+            "title": "סרטון הדרכה 1",
+            "description": "לחצי לצפייה בסרטון ההדרכה.",
+            "src": "/videos/construction-1.mp4",
+            "thumbnail": "/images/construction-1-thumbnail.jpg"
+          },
+          {
+            "title": "סרטון הדרכה 2",
+            "description": "לחצי לצפייה בסרטון ההדרכה.",
+            "src": "/videos/construction-2.mp4",
+            "thumbnail": "/images/construction-2-thumbnail.jpg"
+          }
+        ]
+      },
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$initialadminsalt2026$SnFnDjeVO6eeyMwPwLCal4EzG67UZMvrPsGyio2KDLI=",
+      "last_login": null,
+      "is_superuser": true,
+      "email": "calibrateapp1@gmail.com",
+      "name": "Initial Admin",
+      "role": "admin",
+      "crm_id": "initial-admin",
+      "privacy_policy_accepted": false,
+      "privacy_policy_accepted_at": null,
+      "force_password_change": true,
+      "profile_image_url": "",
+      "created_at": "2026-01-01T00:00:00Z",
+      "is_active": true,
+      "is_staff": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "calibrate.WorkEmphasis",
+    "pk": 1,
+    "fields": {
+      "title": "בטיחות ויציבות המבנה",
+      "content": "בדיקת אלמנטים נושאים, יציבות וביסוס לפי תקנים הנדסיים מחייבים.",
+      "icon": "shield",
+      "position": 1,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.WorkEmphasis",
+    "pk": 2,
+    "fields": {
+      "title": "איכות ודיוק ביצוע הנדסי",
+      "content": "בקרה על התאמה לתכנון, דיוק ביצוע ושמירה על מפרטים.",
+      "icon": "clipboard",
+      "position": 2,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.WorkEmphasis",
+    "pk": 3,
+    "fields": {
+      "title": "הנחיות בקר אחראי",
+      "content": "עמידה בהנחיות בקרת שטח ותיאום מול צוותי ביצוע.",
+      "icon": "hard-hat",
+      "position": 3,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "calibrate.WorkEmphasis",
+    "pk": 4,
+    "fields": {
+      "title": "מניעת ליקויים קריטיים בשטח",
+      "content": "זיהוי מוקדם של חריגות ביצוע ומניעת כשלים הנדסיים קריטיים באתר.",
+      "icon": "alert",
+      "position": 4,
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

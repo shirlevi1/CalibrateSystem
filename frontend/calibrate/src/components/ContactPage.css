@@ -1,0 +1,308 @@
+.contact-page {
+    min-height: 100vh;
+    padding: 24px;
+    padding-bottom: 90px;
+    background: #F4F6F8;
+    color: #2C3338;
+    font-family: "Discovery", system-ui, sans-serif;
+    box-sizing: border-box;
+}
+
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+    box-sizing: border-box;
+}
+
+.contact-page button,
+.contact-page a {
+    font-family: inherit;
+}
+
+/* ================= LAYOUT ================= */
+
+.contact-layout {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+    gap: 18px;
+    align-items: start;
+}
+
+/* ================= MAP ================= */
+
+.contact-map-card {
+    height: 100%;
+    min-height: 540px;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+
+    display: block;
+    border: none;
+}
+
+/* ================= CONTENT ================= */
+
+.contact-content-card {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.info-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding: 22px;
+    border-bottom: 1px solid #D1D5DB;
+    background: #FFFFFF;
+}
+
+.header-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+    background: #F4F6F8;
+    border: 1px solid #D1D5DB;
+    color: #4A6076;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #607080;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.main-title {
+    margin: 0 0 6px;
+
+    color: #2C3338;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.sub-title {
+    max-width: 520px;
+    margin: 0;
+
+    color: #607080;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+.cards-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.info-card-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 16px 22px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid #E6E9ED;
+
+    transition: background-color 0.2s ease;
+}
+
+.info-card-item:last-child {
+    border-bottom: none;
+}
+
+.info-card-item:hover {
+    background: #FAFBFC;
+}
+
+.card-icon-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+    background: #F4F6F8;
+    border: 1px solid #D1D5DB;
+    color: #4A6076;
+}
+
+.card-text {
+    flex: 1;
+    min-width: 0;
+    text-align: right;
+}
+
+.card-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #607080;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card-value {
+    margin: 0;
+
+    color: #2C3338;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.email-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #4A6076;
+    text-decoration: underline;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 9px;
+}
+
+.compact-action-btn {
+    min-height: 30px;
+    padding: 0 11px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    background: #FFFFFF;
+    color: #2C3338;
+
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            color 0.2s ease;
+}
+
+.compact-action-btn:hover {
+    background: #F4F6F8;
+    border-color: #8CA1B6;
+}
+
+.primary-action {
+    background: #4A6076;
+    border-color: #4A6076;
+    color: #FFFFFF;
+}
+
+.primary-action:hover {
+    background: #36495D;
+    border-color: #36495D;
+    color: #FFFFFF;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map-card {
+        min-height: 320px;
+    }
+
+    .map-iframe {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-page {
+        padding: 16px 14px 90px;
+    }
+
+    .info-header {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .header-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .main-title {
+        font-size: 21px;
+    }
+
+    .sub-title {
+        font-size: 13px;
+    }
+
+    .info-card-item {
+        padding: 14px 18px;
+    }
+
+    .card-icon-box {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+
+    .card-value {
+        font-size: 14px;
+    }
+
+    .contact-map-card {
+        min-height: 240px;
+    }
+
+    .map-iframe {
+        min-height: 240px;
+    }
+}

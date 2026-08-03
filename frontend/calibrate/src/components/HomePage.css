@@ -1,0 +1,30 @@
+.home-chatbot-section {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 24px;
+    padding: 4px 0 2px;
+    box-sizing: border-box;
+}
+
+.home-chatbot-section *,
+.home-chatbot-section *::before,
+.home-chatbot-section *::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .home-chatbot-section {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-chatbot-section {
+        margin: 0 auto 20px;
+        padding-top: 2px;
+    }
+}

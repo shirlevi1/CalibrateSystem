@@ -1,0 +1,204 @@
+:root {
+    --color-primary: #4A6076;
+    --color-bg-main: #F4F6F8;
+    --color-bg-white: #FFFFFF;
+    --color-text-main: #2C3338;
+    --color-text-muted: #6C7A86;
+    --color-border: #D1D5DB;
+}
+
+/* ================= PAGE ================= */
+.inspectors-page {
+    direction: rtl;
+    min-height: 100vh;
+    padding: 0 40px 60px;
+    margin: 0;
+    background-color: var(--color-bg-main);
+    font-family: "Discovery", system-ui, sans-serif;
+    color: var(--color-text-main);
+}
+
+/* ================= CONTAINER ================= */
+.inspectors-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+}
+
+/* ================= HEADER ================= */
+.inspectors-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.inspectors-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.inspectors-subtitle {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-text-muted);
+}
+
+/* ================= GRID ================= */
+.inspectors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* ================= CARD ================= */
+.inspector-card {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.inspector-card:hover {
+    transform: translateY(-2px);
+    background: #FAFBFC;
+}
+
+/* ================= AVATAR ================= */
+.inspector-avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: var(--color-bg-main);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+}
+
+.inspector-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.inspector-role {
+    margin: 6px 0 18px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.inspector-section {
+    background: var(--color-bg-main);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 14px;
+    text-align: right;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-main);
+    margin-bottom: 10px;
+}
+
+.subjects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.subject-tag {
+    background: #EEF2F6;
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.no-subjects {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.escort-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--color-text-main);
+}
+
+.escort-details span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.escort-details svg {
+    flex: 0 0 auto;
+    color: var(--color-primary);
+}
+
+/* ================= BUTTON ================= */
+.email-button {
+    width: 100%;
+    min-height: 44px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-primary);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.email-button:hover {
+    background: #3E556B;
+    transform: translateY(-2px);
+}
+
+.inspectors-empty {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .inspectors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inspectors-page {
+        padding: 0 16px 40px;
+    }
+}

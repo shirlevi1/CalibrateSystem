@@ -1,0 +1,467 @@
+.completion-documents-page {
+    min-height: calc(100vh - 72px);
+    padding: 28px 16px 96px;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.completion-documents-page *,
+.completion-documents-page *::before,
+.completion-documents-page *::after {
+    box-sizing: border-box;
+}
+
+.completion-documents-page button {
+    font-family: inherit;
+}
+
+.completion-documents-container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.completion-summary-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 28px 28px 30px;
+    box-shadow: none;
+}
+
+.completion-summary-icon {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completion-summary-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.completion-summary-content h1 {
+    margin: 0 0 10px;
+    font-size: 27px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.completion-summary-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.completion-project-name {
+    margin-top: 6px !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+.completion-main-download-button {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 24px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+            transform 0.2s ease,
+            opacity 0.2s ease;
+}
+
+.completion-main-download-button:hover {
+    transform: translateY(-1px);
+}
+
+.completion-main-download-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.completion-status-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.completion-status-item {
+    min-height: 78px;
+    padding: 12px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-number {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.status-label {
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.completion-filters {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.completion-filters button {
+    min-height: 40px;
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.completion-documents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.completion-document-card {
+    padding: 22px 24px 24px;
+    box-shadow: none;
+}
+
+.document-card-header {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    align-items: start;
+    gap: 14px;
+}
+
+.document-icon-box {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.document-title-area {
+    min-width: 0;
+}
+
+.document-title-area h2 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.35;
+    font-weight: 400;
+}
+
+.document-meta {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.document-meta span {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.document-status {
+    min-height: 30px;
+    padding: 0 14px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.document-description {
+    margin: 14px 58px 0 0;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 300;
+}
+
+.completion-file-row {
+    margin-top: 18px;
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.completion-file-info {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.completion-file-info > div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.completion-file-info strong {
+    font-size: 14px;
+    font-weight: 400;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.completion-file-info span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.completion-file-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.file-action-btn {
+    min-height: 34px;
+    padding: 0 12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+            transform 0.2s ease,
+            opacity 0.2s ease;
+}
+
+.file-action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.file-action-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.completion-no-file {
+    margin-top: 18px;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.completion-empty-state {
+    min-height: 150px;
+    padding: 24px;
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.pdf-viewer-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1500;
+
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-viewer-modal {
+    width: min(980px, 100%);
+    max-height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.pdf-viewer-header {
+    min-height: 56px;
+    padding: 12px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-radius: 0 !important;
+}
+
+.pdf-viewer-close {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.pdf-viewer-header h3 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pdf-viewer-body {
+    flex: 1;
+    min-height: 320px;
+    overflow: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.pdf-viewer-page {
+    margin: 0 auto 16px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.completion-viewer-error {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width: 640px) {
+    .completion-documents-page {
+        padding: 18px 12px 86px;
+    }
+
+    .completion-summary-card {
+        padding: 22px 18px 24px;
+        gap: 12px;
+    }
+
+    .completion-summary-icon {
+        width: 48px;
+        height: 48px;
+        flex-basis: 48px;
+    }
+
+    .completion-summary-content h1 {
+        font-size: 22px;
+    }
+
+    .completion-summary-content p {
+        font-size: 15px;
+    }
+
+    .completion-status-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .completion-filters {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 4px;
+    }
+
+    .completion-filters button {
+        white-space: nowrap;
+    }
+
+    .document-card-header {
+        grid-template-columns: 44px 1fr;
+    }
+
+    .document-status {
+        grid-column: 1 / -1;
+        justify-self: start;
+        margin-top: 6px;
+    }
+
+    .document-description {
+        margin-right: 0;
+    }
+
+    .completion-file-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .completion-file-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .file-action-btn {
+        width: 100%;
+    }
+
+    .pdf-viewer-overlay {
+        padding: 10px;
+    }
+
+    .pdf-viewer-modal {
+        max-height: 95vh;
+    }
+
+    .pdf-viewer-body {
+        padding: 10px;
+    }
+}

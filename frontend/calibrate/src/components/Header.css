@@ -1,0 +1,310 @@
+.header {
+    background-color: #4A6076 !important;
+    width: 100%;
+    overflow: visible;
+    z-index: 1200 !important;
+}
+
+.header-toolbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative;
+    min-height: 72px !important;
+    padding: 0 24px !important;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.header-logo {
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+    order: 1;
+}
+
+.header-title,
+.project-selector {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 58%;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-menu-button {
+    color: #FFFFFF !important;
+    flex-shrink: 0;
+    order: 3;
+}
+
+.header-menu-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.header-greeting {
+    font-size: 14px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+    margin-inline-start: auto;
+}
+
+.project-selector {
+    z-index: 1300;
+}
+
+.project-selector-trigger {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    font-family: "Discovery", system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.16s ease, border-color 0.16s ease;
+}
+
+.project-selector-trigger:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.project-selector-trigger:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
+}
+
+.project-selector-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 260px;
+}
+
+.project-selector-chevron {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.project-selector-chevron.open {
+    transform: rotate(180deg);
+}
+
+.project-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(360px, calc(100vw - 32px));
+    max-height: min(340px, calc(100dvh - 92px));
+    overflow-y: auto;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(44, 51, 56, 0.22);
+    z-index: 1600;
+    padding: 5px;
+    animation: project-dropdown-in 0.14s ease-out;
+    transform-origin: top center;
+}
+
+@keyframes project-dropdown-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-4px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+}
+
+.project-dropdown-item {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #2C3338;
+    font-family: "Discovery", system-ui, sans-serif;
+    text-align: right;
+    cursor: pointer;
+    gap: 10px;
+    transition: background 0.12s ease, color 0.12s ease;
+}
+
+.project-dropdown-item:hover {
+    background: #F4F6F8;
+}
+
+.project-dropdown-item.active {
+    background: #F4F6F8;
+    box-shadow: inset 3px 0 0 #4A6076;
+}
+
+.project-dropdown-item:focus-visible {
+    outline: 2px solid rgba(74, 96, 118, 0.28);
+    outline-offset: -2px;
+}
+
+.project-dropdown-item-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    direction: rtl;
+}
+
+.project-dropdown-check {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(74, 96, 118, 0.10);
+    color: #4A6076;
+}
+
+.project-dropdown-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C3338;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    line-height: 1.35;
+}
+
+.project-dropdown-address {
+    font-size: 12px;
+    font-weight: 300;
+    color: #607080;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    line-height: 1.35;
+}
+
+@media (max-width: 768px) {
+    .header-toolbar {
+        min-height: 56px !important;
+        padding: 6px 12px !important;
+    }
+
+    .header-logo {
+        height: 28px;
+    }
+
+    .header-title {
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        max-width: 52%;
+    }
+
+    .project-selector-trigger {
+        min-height: 34px;
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .project-selector-label {
+        max-width: 150px;
+    }
+
+    .project-dropdown {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: min(340px, calc(100vw - 24px));
+        max-height: min(320px, calc(100dvh - 76px));
+        padding: 6px;
+        border-radius: 6px;
+        box-shadow: 0 10px 30px rgba(44, 51, 56, 0.22);
+        animation: project-dropdown-in 0.14s ease-out;
+        transform-origin: top center;
+    }
+
+    .project-dropdown-item {
+        min-height: 52px;
+        padding: 11px 12px;
+        border-radius: 6px;
+    }
+
+    .header-greeting {
+        font-size: 12px;
+        max-width: 100px;
+        margin-inline-start: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-toolbar {
+        min-height: 52px !important;
+        padding: 4px 8px !important;
+    }
+
+    .header-logo {
+        height: 24px;
+    }
+
+    .header-title {
+        font-size: 11px !important;
+        max-width: 48%;
+    }
+
+    .project-selector-trigger {
+        min-height: 32px;
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .project-selector-label {
+        max-width: 116px;
+    }
+
+    .project-dropdown {
+        width: min(312px, calc(100vw - 16px));
+        max-height: min(300px, calc(100dvh - 68px));
+    }
+
+    .project-dropdown-name {
+        font-size: 13px;
+    }
+
+    .project-dropdown-address {
+        font-size: 11px;
+    }
+
+    .header-greeting {
+        font-size: 10px;
+        max-width: 70px;
+    }
+}
