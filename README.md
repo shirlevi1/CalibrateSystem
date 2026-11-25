@@ -34,3 +34,27 @@ The system uses REST APIs for communication between frontend and backend, JWT-ba
 ## Project Highlights
 
 This project demonstrates practical experience in full-stack development, REST API integration, authentication, access control, database integration, and implementing complex business workflows.
+
+## Application Preview
+
+A selection of mobile screens showcasing the project's responsive interface, authentication, and administrative functionality.
+
+<table>
+  <tr>
+    <th>Project Dashboard</th>
+    <th>Sign In</th>
+    <th>User Management</th>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <img src="docs/dashboard.jpeg" alt="Project Dashboard" width="240">
+    </td>
+    <td align="center" valign="top">
+      <img src="docs/login.jpeg" alt="Sign In" width="240">
+    </td>
+    <td align="center" valign="top">
+      <img src="docs/users.jpeg" alt="User Management" width="240">
+    </td>
+  </tr>
+</table>
+
