@@ -35,9 +35,10 @@ The system uses REST APIs for communication between frontend and backend, JWT-ba
 
 This project demonstrates practical experience in full-stack development, REST API integration, authentication, access control, database integration, and implementing complex business workflows.
 
+
 ## Application Preview
 
-A selection of mobile screens showcasing the project's responsive interface, authentication, and administrative functionality.
+A responsive project management platform with dedicated interfaces for project workflows, authentication, and administration.
 
 <table>
   <tr>
@@ -47,14 +48,15 @@ A selection of mobile screens showcasing the project's responsive interface, aut
   </tr>
   <tr>
     <td align="center" valign="top">
-      <img src="docs/dashboard.jpeg" alt="Project Dashboard" width="240">
+      <img src="calibrate-portfolio/docs/dashboard.jpeg" alt="Project Dashboard" width="240">
     </td>
     <td align="center" valign="top">
-      <img src="docs/login.jpeg" alt="Sign In" width="240">
+      <img src="calibrate-portfolio/docs/login.jpeg" alt="Sign In" width="240">
     </td>
     <td align="center" valign="top">
-      <img src="docs/users.jpeg" alt="User Management" width="240">
+      <img src="calibrate-portfolio/docs/users.jpeg" alt="User Management" width="240">
     </td>
   </tr>
 </table>
+
 
